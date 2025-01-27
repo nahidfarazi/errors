@@ -5,17 +5,17 @@ import (
 	"log"
 )
 
-func Check(e error){
+func Check(e ...error){
 	if e != nil{
 		panic(e)
 	}
 }
-func CheckLog(e error){
+func CheckLog(e ...error){
 	if e != nil{
 		log.Fatal(e)
 	}
 }
-func CheckCustom(e error){
+func CheckCustom(e ...error){
 	if e != nil{
 		fmt.Println(e)
 	}
